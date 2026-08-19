@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Zoom nunca deve ser bloqueado: não usar maximum-scale ou user-scalable=no acima -->
+<meta name="robots" content="noindex, follow">
+<title>Regulamento da Raspadinha | Mês do Cliente Biodental 2026</title>
+<meta name="description" content="Consulte o regulamento completo da campanha Raspadinha do Mês do Cliente Biodental 2026.">
+
+<!--
+  ================================================================
+  ARQUIVO: regulamento-raspadinha.html
+  Página pública de regulamento, acessada via QR Code impresso.
+  Não exige login, cadastro, aplicativo ou cookies obrigatórios.
+
+  INTEGRAÇÃO COM VTEX:
+  Caso esta página seja incorporada ao tema atual da loja, utilize
+  apenas o conteúdo dentro de <main id="conteudo-regulamento"> como
+  corpo da rota e o bloco <style> abaixo como CSS específico da
+  página, preservando o header e o footer oficiais já existentes no
+  tema (não recriar cabeçalho/rodapé nesse cenário).
+  Rota pública sugerida: /regulamento-raspadinha
+  ================================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" href="https://biodental.vteximg.com.br/arquivos/biodental-favicon.ico">
+
+<style>
+  /* ===== Variáveis de identidade visual Biodental ===== */
+  :root{
+    --roxo: #731ABA;
+    --roxo-escuro: #521285;
+    --vermelho: #FF2B3D;
+    --amarelo: #FFC400;
+    --branco: #FFFFFF;
+    --fundo: #F7F5F9;
+    --texto: #2C2233;
+    --texto-suave: #5B5163;
+    --borda: #E7E1EE;
+    --raio: 14px;
+    --raio-sm: 8px;
+    --sombra: 0 2px 14px rgba(82, 18, 133, 0.07);
+    --largura-max: 1040px;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html{ -webkit-text-size-adjust: 100%; }
+
+  body{
+    margin: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a{ color: var(--roxo); }
+  a:focus-visible,
+  button:focus-visible{
+    outline: 3px solid var(--amarelo);
+    outline-offset: 2px;
+  }
+
+  img{ max-width: 100%; display: block; }
+
+  /* ===== Cabeçalho institucional =====
+     Reproduz o padrão visual do site oficial (fundo branco, logo
+     oficial, borda inferior discreta). Ao integrar ao tema VTEX,
+     remover este <header> e reutilizar o cabeçalho já existente. */
+  .site-header{
+    background: var(--branco);
+    border-bottom: 1px solid var(--borda);
+  }
+  .site-header__inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .site-header__logo img{
+    height: 38px;
+    width: auto;
+  }
+  .site-header__voltar{
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--roxo-escuro);
+    white-space: nowrap;
+  }
+  .site-header__voltar:hover{ text-decoration: underline; }
+
+  /* ===== Breadcrumb ===== */
+  .breadcrumb{
+    max-width: var(--largura-max);
+    margin: 20px auto 0;
+    padding: 0 20px;
+    font-size: 14px;
+    color: var(--texto-suave);
+  }
+  .breadcrumb a{
+    color: var(--texto-suave);
+    text-decoration: none;
+  }
+  .breadcrumb a:hover{ color: var(--roxo); text-decoration: underline; }
+  .breadcrumb__atual{ color: var(--roxo-escuro); font-weight: 500; }
+
+  /* ===== Abertura compacta ===== */
+  .abertura{
+    max-width: var(--largura-max);
+    margin: 22px auto 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .abertura__icone{
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F1E6FA;
+    border-radius: 50%;
+  }
+  .abertura__icone svg{ width: 26px; height: 26px; }
+  .abertura h1{
+    margin: 0 0 6px;
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 700;
+    color: var(--roxo-escuro);
+    letter-spacing: -0.02em;
+  }
+  .abertura__subtitulo{
+    margin: 0 0 12px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--roxo);
+  }
+  .abertura__texto{
+    margin: 0 auto;
+    max-width: 620px;
+    font-size: 16px;
+    color: var(--texto-suave);
+  }
+
+  /* ===== Área do regulamento ===== */
+  .regulamento-wrap{
+    max-width: var(--largura-max);
+    margin: 28px auto 56px;
+    padding: 0 20px;
+  }
+  .regulamento{
+    background: var(--branco);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    padding: clamp(24px, 5vw, 56px);
+  }
+
+  .regulamento__intro{
+    font-size: 16px;
+    color: var(--texto);
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--borda);
+  }
+
+  section.regra{
+    padding: 26px 0;
+    border-bottom: 1px solid var(--borda);
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  section.regra:last-of-type{
+    border-bottom: none;
+    padding-bottom: 4px;
+  }
+
+  .regra h2{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 12px;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--roxo-escuro);
+  }
+  .regra h2 .num{
+    flex: none;
+    color: var(--branco);
+    background: var(--roxo);
+    font-size: 13px;
+    font-weight: 700;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .regra p{ margin: 0 0 12px; }
+  .regra p:last-child{ margin-bottom: 0; }
+
+  .regra ul,
+  .regra ol{
+    margin: 0 0 12px;
+    padding-left: 22px;
+  }
+  .regra ul:last-child,
+  .regra ol:last-child{ margin-bottom: 0; }
+  .regra li{ margin-bottom: 6px; }
+  .regra li:last-child{ margin-bottom: 0; }
+
+  .destaque{
+    font-weight: 600;
+    color: var(--vermelho);
+  }
+  .destaque-roxo{
+    font-weight: 600;
+    color: var(--roxo);
+  }
+
+  .aviso-final{
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px dashed var(--borda);
+    font-size: 14px;
+    color: var(--texto-suave);
+  }
+
+  /* ===== Rodapé institucional =====
+     Reproduz de forma resumida o padrão do rodapé oficial. Ao
+     integrar ao tema VTEX, remover e reutilizar o footer existente. */
+  .site-footer{
+    background: var(--roxo-escuro);
+    color: #EFE4FB;
+    margin-top: auto;
+  }
+  .site-footer__inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 36px 24px 24px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    font-size: 14px;
+  }
+  .site-footer h3{
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--branco);
+  }
+  .site-footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .site-footer li{ margin-bottom: 8px; }
+  .site-footer a{
+    color: #EFE4FB;
+    text-decoration: none;
+  }
+  .site-footer a:hover{ text-decoration: underline; }
+  .site-footer__base{
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding: 16px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 12.5px;
+    color: #D9C6EF;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+  }
+
+  /* ===== Responsivo ===== */
+  @media (max-width: 480px){
+    .site-header__inner{ padding: 14px 16px; }
+    .abertura{ padding: 0 16px; }
+    .regulamento-wrap{ padding: 0 12px; margin-top: 20px; }
+    .regulamento{ padding: 20px; }
+    .regra h2{ font-size: 17px; }
+  }
+
+  /* ===== Impressão ===== */
+  @media print{
+    .site-header,
+    .site-footer,
+    .breadcrumb,
+    .abertura__icone{
+      display: none !important;
+    }
+    body{ background: var(--branco); font-size: 12pt; }
+    .regulamento-wrap{ margin: 0; padding: 0; max-width: 100%; }
+    .regulamento{ box-shadow: none; padding: 0; border-radius: 0; }
+    section.regra{ break-inside: avoid; page-break-inside: avoid; }
+    a{ color: var(--texto); text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ CABEÇALHO ============
+     Ao integrar ao tema VTEX, remova este <header> por completo e
+     deixe o header oficial do tema renderizar normalmente. -->
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="https://www.biodental.com.br/" class="site-header__logo" aria-label="Biodental - página inicial">
+      <img src="https://biodental.vtexassets.com/assets/vtex/assets-builder/biodental.theme/0.0.122/logo/logo-biodental___8a9ae2fe56994731b257e2f5ce08d7a5.svg" alt="Biodental">
+    </a>
+    <a href="https://www.biodental.com.br/" class="site-header__voltar">Voltar à loja oficial</a>
+  </div>
+</header>
+
+<!-- ============ CONTEÚDO PRINCIPAL ============ -->
+<main id="conteudo-regulamento">
+
+  <nav class="breadcrumb" aria-label="Trilha de navegação">
+    <a href="https://www.biodental.com.br/">Início</a> &gt;
+    <span class="breadcrumb__atual">Regulamento da Raspadinha</span>
+  </nav>
+
+  <div class="abertura">
+    <div class="abertura__icone" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="3" width="18" height="18" rx="3" stroke="#731ABA" stroke-width="1.6"/>
+        <path d="M7 15c1-1.5 2.5-1.5 3.5-.5s2.5 1 3.5-.5 2-1.5 3-1" stroke="#731ABA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="8" cy="8.5" r="1.1" fill="#FFC400"/>
+        <circle cx="12.5" cy="7.5" r="1.1" fill="#FF2B3D"/>
+        <circle cx="16" cy="9" r="1.1" fill="#731ABA"/>
+      </svg>
+    </div>
+    <h1>Regulamento da Raspadinha</h1>
+    <p class="abertura__subtitulo">Mês do Cliente Biodental 2026</p>
+    <p class="abertura__texto">Consulte abaixo todas as condições de participação e utilização dos benefícios.</p>
+  </div>
+
+  <div class="regulamento-wrap">
+    <article class="regulamento">
+
+      <p class="regulamento__intro">
+        Este regulamento apresenta as condições de participação, recebimento e utilização dos
+        benefícios da campanha Raspadinha — Mês do Cliente Biodental 2026.
+      </p>
+
+      <section class="regra" aria-labelledby="regra-1">
+        <h2 id="regra-1"><span class="num">1</span> Período da campanha</h2>
+        <p>
+          A campanha será válida de <strong class="destaque">01/09/2026</strong> a
+          <strong class="destaque">30/09/2026</strong>, enquanto houver raspadinhas disponíveis.
+        </p>
+        <p>
+          Os benefícios revelados deverão ser utilizados até
+          <strong class="destaque">31/10/2026</strong>, respeitando as condições previstas neste
+          regulamento.
+        </p>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-2">
+        <h2 id="regra-2"><span class="num">2</span> Como participar</h2>
+        <p>A cada <strong class="destaque-roxo">R$ 299</strong> em compras, o cliente receberá 1 raspadinha.</p>
+        <p>A quantidade será calculada por múltiplos de R$ 299:</p>
+        <ul>
+          <li>R$ 299 em compras: 1 raspadinha;</li>
+          <li>R$ 598 em compras: 2 raspadinhas;</li>
+          <li>R$ 897 em compras: 3 raspadinhas;</li>
+          <li>e assim sucessivamente.</li>
+        </ul>
+        <p>O valor considerado é o valor dos produtos comprados, estejam eles ou não em condição promocional, <strong class="destaque-roxo">não sendo considerado o valor do frete</strong> no cálculo.</p>
+        <p>Somente pedidos concluídos e aprovados durante o período da campanha darão direito ao recebimento das raspadinhas.</p>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-3">
+        <h2 id="regra-3"><span class="num">3</span> Onde a campanha é válida</h2>
+        <p>A campanha é válida exclusivamente para compras realizadas:</p>
+        <ul>
+          <li>no site oficial da Biodental;</li>
+          <li>pelo WhatsApp da Biodental;</li>
+          <li>na loja física da Biodental.</li>
+        </ul>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-4">
+        <h2 id="regra-4"><span class="num">4</span> Benefícios</h2>
+        <p>A raspadinha poderá revelar descontos, brindes físicos ou a mensagem “Não foi dessa vez”.</p>
+        <p>Os descontos disponíveis são:</p>
+        <ul>
+          <li><strong class="destaque-roxo">R$ 15 OFF</strong> em compras acima de <strong class="destaque">R$ 299</strong>;</li>
+          <li><strong class="destaque-roxo">R$ 30 OFF</strong> em compras acima de <strong class="destaque">R$ 599</strong>;</li>
+          <li><strong class="destaque-roxo">R$ 50 OFF</strong> em compras acima de <strong class="destaque">R$ 999</strong>.</li>
+        </ul>
+        <p>A condição de compra mínima também estará indicada junto ao prêmio, abaixo da área raspável.</p>
+        <p>Os brindes físicos serão identificados diretamente na raspadinha premiada.</p>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-5">
+        <h2 id="regra-5"><span class="num">5</span> Prazo para utilização</h2>
+        <p>O benefício deverá ser utilizado na próxima compra realizada até <strong class="destaque">31/10/2026</strong>.</p>
+        <p>O benefício não poderá ser aplicado à compra que originou a raspadinha.</p>
+        <p>Benefícios não utilizados ou solicitados até <strong class="destaque">31/10/2026</strong> perderão a validade.</p>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-6">
+        <h2 id="regra-6"><span class="num">6</span> Como resgatar</h2>
+        <p>Para solicitar o resgate, o cliente deverá:</p>
+        <ol>
+          <li>Entrar em contato com o SAC ou com sua vendedora antes de finalizar a próxima compra;</li>
+          <li>Enviar uma foto legível da raspadinha premiada;</li>
+          <li>Informar o CPF ou CNPJ utilizado na compra que originou a raspadinha;</li>
+          <li>Apresentar o cartão original quando solicitado pela Biodental.</li>
+        </ol>
+        <p>Após a validação, o desconto será aplicado ao próximo pedido ou o brinde será enviado junto à próxima compra.</p>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-7">
+        <h2 id="regra-7"><span class="num">7</span> Valores mínimos</h2>
+        <p>Os descontos deverão respeitar os seguintes valores mínimos:</p>
+        <ul>
+          <li>R$ 15 OFF: compra mínima de <strong class="destaque">R$ 299</strong>;</li>
+          <li>R$ 30 OFF: compra mínima de <strong class="destaque">R$ 599</strong>;</li>
+          <li>R$ 50 OFF: compra mínima de <strong class="destaque">R$ 999</strong>.</li>
+        </ul>
+        <p>Os valores mínimos deverão ser atingidos após a aplicação de outros descontos permitidos pela campanha.</p>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-8">
+        <h2 id="regra-8"><span class="num">8</span> Acúmulo de benefícios</h2>
+        <p>Os benefícios da raspadinha não são cumulativos com outros cupons, descontos, raspadinhas ou campanhas promocionais, incluindo, entre outros, o desconto de 5% no Pix, condições de frete grátis ou frete fixo, e produtos que já estejam em promoção.</p>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-9">
+        <h2 id="regra-9"><span class="num">9</span> Limite de utilização</h2>
+        <p>Cada raspadinha poderá ser resgatada uma única vez.</p>
+        <p>Será permitida a utilização de apenas 1 benefício da campanha por pedido.</p>
+        <p>O benefício é individual, intransferível e vinculado ao CPF ou CNPJ utilizado na compra que originou a raspadinha.</p>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-10">
+        <h2 id="regra-10"><span class="num">10</span> Brindes físicos e frete</h2>
+        <p>Os brindes físicos serão enviados junto à próxima compra realizada até <strong class="destaque">31/10/2026</strong>.</p>
+        <p>Caso o cliente não realize uma nova compra até essa data, poderá solicitar o envio separado do brinde, ficando responsável pelo pagamento do frete.</p>
+        <p>A solicitação de envio deverá ser realizada até <strong class="destaque">31/10/2026</strong>.</p>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-11">
+        <h2 id="regra-11"><span class="num">11</span> Disponibilidade dos brindes</h2>
+        <p>A quantidade de raspadinhas premiadas corresponde à quantidade de brindes reservados para a campanha.</p>
+        <p>Uma raspadinha premiada, original e validada garante ao cliente o direito ao benefício indicado.</p>
+        <p>Caso o brinde esteja temporariamente indisponível, a Biodental entrará em contato com o cliente para combinar a forma e o prazo de entrega, sem perda do benefício.</p>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-12">
+        <h2 id="regra-12"><span class="num">12</span> Raspadinhas danificadas ou adulteradas</h2>
+        <p>Raspadinhas ilegíveis, rasuradas, reproduzidas, alteradas ou com indícios de adulteração poderão ser invalidadas após análise da Biodental.</p>
+        <p>A Biodental poderá solicitar a apresentação do cartão original para concluir a validação e o resgate.</p>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-13">
+        <h2 id="regra-13"><span class="num">13</span> Conversão do prêmio</h2>
+        <p>Os brindes físicos não poderão ser convertidos em dinheiro, crédito, desconto ou outro benefício.</p>
+        <p>Os descontos também não poderão ser convertidos em dinheiro ou utilizados fora das condições indicadas na raspadinha.</p>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-14">
+        <h2 id="regra-14"><span class="num">14</span> Atendimento</h2>
+        <p>Em caso de dúvidas, o cliente deverá entrar em contato pelos canais oficiais da Biodental:</p>
+        <ul>
+          <li>WhatsApp: <a href="https://wa.me/554896407373">+55 48 9640-7373</a>;</li>
+          <li>SAC: <a href="https://wa.me/554896407373">+55 48 9640-7373</a>;</li>
+          <li>Site: <a href="https://www.biodental.com.br">www.biodental.com.br</a>;</li>
+          <li>Horário de atendimento: segunda a sexta-feira, das 8h às 18h.</li>
+        </ul>
+      </section>
+
+      <section class="regra" aria-labelledby="regra-15">
+        <h2 id="regra-15"><span class="num">15</span> Disposições finais</h2>
+        <p>A participação na campanha implica a aceitação das condições previstas neste regulamento.</p>
+        <p>Situações não previstas serão analisadas pela Biodental de acordo com a legislação aplicável e as condições oficiais da campanha.</p>
+        <p class="aviso-final">
+          Última atualização: 19/08/2026
+        </p>
+      </section>
+
+      <!--
+        PENDÊNCIA INTERNA (não exibir ao cliente):
+        SORTEIO DO VALE DE R$ 500 — conteúdo ainda pendente, não publicar.
+
+        Mecânica já informada (19/08/2026): ao compartilhar o momento de raspar a
+        raspadinha nas redes sociais, o cliente participa do sorteio de um vale de
+        R$ 500 em compras.
+
+        Atualização (19/08/2026): pode ser em qualquer rede social, com preferência
+        por Instagram e TikTok, desde que marque o perfil oficial @biodentalprodutos.
+        Data do sorteio: 30/09/2026.
+
+        Ainda faltam definir, antes de publicar qualquer regra sobre este sorteio:
+        - período de participação;
+        - se o perfil do participante precisa ser público;
+        - método de escolha do vencedor (sorteio aleatório, plataforma usada etc.);
+        - forma de contato com o vencedor;
+        - compra mínima para participar (se houver);
+        - validade do vale;
+        - regras de utilização do vale (cumulatividade, produtos elegíveis etc.).
+      -->
+
+    </article>
+  </div>
+
+</main>
+
+<!-- ============ RODAPÉ ============
+     Ao integrar ao tema VTEX, remova este <footer> por completo e
+     deixe o footer oficial do tema renderizar normalmente. -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div>
+      <h3>Institucional</h3>
+      <ul>
+        <li><a href="https://www.biodental.com.br/sobre-nos">Sobre nós</a></li>
+        <li><a href="https://www.biodental.com.br/politica-de-privacidade">Política de Privacidade</a></li>
+        <li><a href="https://www.biodental.com.br/como-comprar">Como Comprar</a></li>
+        <li><a href="https://www.biodental.com.br/trocas-e-devolucoes">Trocas e Devoluções</a></li>
+        <li><a href="https://www.biodental.com.br/pagamentos">Pagamentos</a></li>
+        <li><a href="https://www.biodental.com.br/envios-e-entregas">Envios e entregas</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Atendimento</h3>
+      <ul>
+        <li><a href="https://www.biodental.com.br/fale-conosco">Fale conosco</a></li>
+        <li>Seg à Sex das 08h às 18h</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Redes sociais</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/biodentalprodutos">Instagram</a></li>
+        <li><a href="https://www.facebook.com/biodentalprodutos">Facebook</a></li>
+        <li><a href="https://www.youtube.com/@biodentalprodutos5133">YouTube</a></li>
+        <li><a href="https://www.linkedin.com/company/biodentalprodutos/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="site-footer__base">
+    <span>Rua Antônio de Lucca nº20 - Sala 101 - Pio Corrêa - Criciúma/SC</span>
+    <span>CNPJ: 76.560.358/0001-30</span>
+    <span>Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+</body>
+</html>
